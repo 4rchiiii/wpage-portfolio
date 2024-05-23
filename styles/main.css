@@ -1,0 +1,38 @@
+.main-content {
+    text-align: center;
+    padding: 20px;
+}
+
+.profile-image {
+    border-radius: 10%;
+    width: 50%;
+}
+
+.site-content {
+    min-height: calc(100vh - 189px);
+}
+
+.footer {
+    background: #333;
+    color: white;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footer-item {
+    text-align: center;
+}
+
+.footer-icon {
+    font-size: 36px;
+    margin-bottom: 5px;
+}
+
+
+@media (max-width: 768px) {
+    .profile-image{
+        width: 80%;
+    }
+}

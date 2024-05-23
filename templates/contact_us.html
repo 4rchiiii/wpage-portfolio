@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="../bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../styles/main.css" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <title>Archi</title>
+  <script src="../scripts/user.js"></script>
+  <!-- reCAPTCHA -->
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+</head>
+<body>
+<header class="bg-dark text-white text-center p-3">
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <a class="navbar-brand" href="contact_us.html">Обратная связь</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="price.html">Расценки</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../index.html">Главная</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</header>
+
+<div class="site-content container">
+  <h2 class="mt-4 mb-4">Обратная связь</h2>
+  <form action="/submit" method="POST" id="contact-form">
+    <div class="form-group">
+      <label class="mb-1" for="name">Имя</label>
+      <input type="text" name="name" class="form-control" id="name" placeholder="Введите ваше имя" required>
+    </div>
+    <div class="form-group mt-3">
+      <label class="mb-1" for="email">Почта</label>
+      <input type="email" name="email" class="form-control" id="email" placeholder="Введите вашу почту" required>
+    </div>
+    <div class="form-group mt-3">
+      <label class="mb-1" for="message">Сообщение</label>
+      <textarea class="form-control" name="info" id="message" rows="4" placeholder="Введите ваше сообщение" required></textarea>
+    </div>
+    <div class="g-recaptcha" data-sitekey="6Lf89d0pAAAAALxSFNrHVqTnR6wULeu6BkwurBwG"></div> <!-- Замените ВАШ_ОТКРЫТЫЙ_КЛЮЧ на свой открытый ключ -->
+    <button type="submit" class="btn btn-primary mt-3">Отправить</button>
+  </form>
+</div>
+
+<footer class="footer text-center bg-dark text-white">
+  <div class="footer-item">
+    <i class="fab fa-telegram footer-icon"></i>
+    <p>Telegram</p>
+  </div>
+  <div class="footer-item">
+    <i class="fab fa-vk footer-icon"></i>
+    <p>VK</p>
+  </div>
+  <div class="footer-item">
+    <i class="fab fa-instagram footer-icon"></i>
+    <p>Instagram</p>
+  </div>
+</footer>
+</body>
+</html>
