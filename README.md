@@ -7,7 +7,7 @@
 1. **Клонирование репозитория:**
    Склонируйте репозиторий с помощью команды `git clone`:
    ```bash
-   git clone https://github.com/4rchiiii/wpage-portfolio.git
+   git clone https://github.com/achstkv/wpage-portfolio.git
 2. **Переход в директорию с проектом:**
     Перейдите в директорию с загруженным проектом:
     ```bash
